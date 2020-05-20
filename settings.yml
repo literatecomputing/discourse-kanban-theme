@@ -25,3 +25,7 @@ extra_icons:
   default: "user-minus"
   description:
     en: Extra icons to load for the theme component. There is no need to change this setting.
+num_columns:
+  default: 3
+  description:
+    en: Number of columns of items

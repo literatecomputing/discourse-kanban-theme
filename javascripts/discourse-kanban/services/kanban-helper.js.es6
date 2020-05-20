@@ -6,7 +6,9 @@ export default Ember.Service.extend({
     hrefForCategory(category) {
       let destinationURL = "/latest";
       if (category) {
-        const slug = Discourse.Category.slugFor(category);
+        console.log (category.slug);
+        // const slug = Discourse.Category.slugFor(category);
+        const slug = category.slug;
         destinationURL = `/c/${slug}/l/latest`;
       }
       return destinationURL;
